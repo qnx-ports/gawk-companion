@@ -1,6 +1,6 @@
 pkgname=gawk
 pkgver=5.3.2
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="GNU awk pattern-matching language"
 url="https://www.gnu.org/software/gawk/gawk.html"
 arch="all"
@@ -36,7 +36,6 @@ package() {
 }
 
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 2268150fa35ae049a6ff3d0d0fa110db10477014c25f50e2ab4e3ee5fd60133369d2a994f59db4eb718020a0af5c4003ae7278c63e7fffa72f431ff4a1429e48  gawk-5.3.2.tar.xz
 f05782dbb64ab6f0bbc454c55addced35e3e5b0ede9ecca870e4762c37a7bf8f654ea489095a0dc104568cf49fee5b1d575bf1ed0d74775f28ce26d52a344c43  fix-qnx.patch
